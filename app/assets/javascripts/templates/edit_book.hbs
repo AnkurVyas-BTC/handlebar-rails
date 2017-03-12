@@ -1,0 +1,23 @@
+<form action="/books/{{id}}" data-remote="true" id="edit-book" method='PUT'>
+  <div class="row">
+    <div class="form-group">
+      Name
+      <input type="text" name="book[name]" placeholder="Add name" class='form-control' value={{name}} >
+    </div>
+    <div class="form-group">
+      Price
+      <input type="text" name="book[price]" placeholder="Add price" class='form-control' value={{price}} >
+    </div>
+    <div class="form-group">
+      Author
+      <input type="text" name="book[author]" placeholder="Add author" class='form-control' value={{author}} >
+    </div>
+  </div>
+  </div>
+</form>
+
+<div class="clearfix"></div>
+<div class="row">
+  <button id='submit-book' class="btn btn-lg btn-success">Update Book Details</button>
+  <button id='list-books' class="btn btn-lg btn-info">Go to List</button>
+</div>

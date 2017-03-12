@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+if Book.count == 0
+  (1..15).each do |i|
+    Book.create(name: "Book-#{i}", price: rand(1..100), author: "Author-#{i}")
+    puts "Adding book entry number: #{i}"
+  end
+end

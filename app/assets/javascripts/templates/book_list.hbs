@@ -1,0 +1,28 @@
+<div class="row">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Book Name</th>
+        <th>Book Price</th>
+        <th>Author</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#books}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{price}}</td>
+        <td>{{author}}</td>
+        <td><button class="edit-book btn btn-warning" data-book-id="{{id}}">Edit</button>
+          <button class="delete-book btn btn-danger" data-book-id="{{id}}">Delete</button>
+        </td>
+      </tr>
+      {{/books}}
+    </tbody>
+  </table>
+
+  <div>
+    <button id='new-book' class="btn btn-lg btn-primary">Add New Book</button>
+  </div>
+</div>
